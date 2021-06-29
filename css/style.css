@@ -3,14 +3,16 @@
     height: 606px;
     display: flex;
     flex-wrap: wrap;
+    background-color: black;
 }
 
 .square {
     height: 200px;
     width: 200px;
-    border:solid  black 1px;
+    border:solid  whitesmoke 1px;
 }
 
 .hit{
-    background-color:aquamarine; 
+    background-image: url('hit.png');
+    background-size: cover;
 }
