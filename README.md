@@ -12,3 +12,8 @@ addEventListener
 setInterval
 classList.add
 etc.
+
+# Project wireframe!
+
+![Project Wireframe](file:///Users/bsoft/Downloads/WireframePro%20-%20HiT-Me%20_%20Page%201.html)
+
