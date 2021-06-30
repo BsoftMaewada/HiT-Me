@@ -15,5 +15,5 @@ etc.
 
 # Project wireframe!
 
-![Project Wireframe](https://wireframepro.mockflow.com/editor.jsp?editor=on&publicid=Mfb7bb1d5b6b065001daf2b54c7d994341625025739174&perm=Create&projectid=Mde8c05113362271f5a793e6597a653971625025775270&ptitle=HiT-Me&bgcolor=white&category=web#/page/840a224e7a2946c781809d431dce24b7)
+![Project Wireframe](Projectwireframe.jpg)
 
