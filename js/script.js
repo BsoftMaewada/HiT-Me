@@ -63,7 +63,7 @@ squares.forEach(square => {
 
             //adding a score 
             score.textContent = result;
-            //saving it to venomPosition
+            //clear venomPosition
             venomPosition = null;
         }
 
@@ -81,13 +81,16 @@ function moveVenom() {
 
 /**  **/
 function countDown() {
+    //count down timer
     currentTime--
+    //display the current time 
     timeLeft.textContent = currentTime;
     console.log('Hello')
 
     if (currentTime == 0) {
         //console.log('current time')
         clearInterval(countDownTimerId);
+        //clear timerId
         clearInterval(timerId)
         alert('GAME OVER! your final Scores is: ' +result);
         currentTime = 30;
