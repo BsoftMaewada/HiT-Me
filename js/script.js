@@ -33,17 +33,32 @@ function randomSquare() {
         square.classList.remove('venom');
     });
 
-    // a venom randomly using Math.random  number from zero to eight
+    /* Adding a venom randomly */
+
+    // getting venom randomly using Math.random square from zero to eight
     let randomSquare = squares[Math.floor(Math.random() * 9)];
+    //console.log(randomSquare)
+    //console.log(Math.floor(Math.random() * 9))
     randomSquare.classList.add('venom');
 
     // getting the random square ids
     venomPosition = randomSquare.id;
 }
 
+/** hitting the venom **/
+
+//getting a point for each time we hit the venom
 squares.forEach(square => {
+
+    //adding an event listener to listen out if we put 
+    //mouse down for each time we click on the square.
+
     square.addEventListener('mousedown', () => {
+
+        // what to happen is we click on the square
         if (square.id == venomPosition){
+
+            //getting the result and adding one to the result
             result++;
 
             //adding a score 
@@ -55,21 +70,27 @@ squares.forEach(square => {
     })
 })
 
+/** Timer function **/
+
 function moveVenom() {
-    timerId = setInterval(randomSquare, 1000); //show random  for 10 seconds
+    //setting interval to move the venom randomly  for 5 seconds
+    timerId = setInterval(randomSquare, 500); 
 }
 
 //moveVenom();
 
+/**  **/
 function countDown() {
     currentTime--
     timeLeft.textContent = currentTime;
+    console.log('Hello')
 
     if (currentTime == 0) {
+        //console.log('current time')
         clearInterval(countDownTimerId);
         clearInterval(timerId)
         alert('GAME OVER! your final Scores is: ' +result);
-
+        currentTime = 30;
     }
 }
 
