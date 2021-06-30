@@ -1,18 +1,32 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: white;
+}
 .grid {
     width: 606px;
     height: 606px;
     display: flex;
     flex-wrap: wrap;
     background-color: black;
+    justify-items: end;
+    align-content: center;
+    justify-self: center;
 }
 
 .square {
     height: 200px;
     width: 200px;
-    border:solid  whitesmoke 1px;
+    border:solid white 1px;
 }
 
-.hit{
+.venom{
     background-image: url('hit.png');
     background-size: cover;
 }
