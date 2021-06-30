@@ -15,5 +15,5 @@ etc.
 
 # Project wireframe!
 
-![Project Wireframe](/Projectwireframe.jpg)
+
 
