@@ -5,7 +5,7 @@ const squares = document.querySelectorAll('.square');
 //const squares = $('.square');
 //console.log(squares, squaresv)
 
-// select the venoms elements
+// selecting  the elements with a class of venom
 const venom = document.querySelector('.venom');
 //const venom = $('.venom');
 
@@ -29,19 +29,27 @@ function randomSquare() {
 
 //for each square in our square array
     squares.forEach(square=> {
-// for each square we are removing the venom if it exist in square
+// for each square we are removing the venom if it exist in any of the squares
         square.classList.remove('venom');
     });
 
     /* Adding a venom randomly */
 
     // getting venom randomly using Math.random square from zero to eight
+
+    //The Math.floor() function returns the largest integer less than or equal to a given number.
+
+    //The Math.random() function returns a floating-point, pseudo-random 
+    //number in the range 0 to less than 1 (inclusive of 0, but not 1.
+
     let randomSquare = squares[Math.floor(Math.random() * 9)];
+
     //console.log(randomSquare)
     //console.log(Math.floor(Math.random() * 9))
     randomSquare.classList.add('venom');
 
-    // getting the random square ids
+    // getting the id of the random square and 
+    //saving it to venomPosition
     venomPosition = randomSquare.id;
 }
 
@@ -52,7 +60,6 @@ squares.forEach(square => {
 
     //adding an event listener to listen out if we put 
     //mouse down for each time we click on the square.
-
     square.addEventListener('mousedown', () => {
 
         // what to happen is we click on the square
@@ -61,9 +68,10 @@ squares.forEach(square => {
             //getting the result and adding one to the result
             result++;
 
-            //adding a score 
+            //display the result in our score 
             score.textContent = result;
-            //clear venomPosition
+
+            //clear out venomPosition
             venomPosition = null;
         }
 
@@ -83,9 +91,10 @@ function moveVenom() {
 function countDown() {
     //count down timer
     currentTime--
+    
     //display the current time 
     timeLeft.textContent = currentTime;
-    console.log('Hello')
+    //console.log('Hello')
 
     if (currentTime == 0) {
         //console.log('current time')
