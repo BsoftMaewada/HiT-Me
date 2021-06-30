@@ -15,5 +15,5 @@ etc.
 
 # Project wireframe!
 
-![Project Wireframe](/Users/bsoft/Documents/GAProjects/HiT-Me/Projectwireframe.jpg)
+![Project Wireframe](/Projectwireframe.jpg)
 
