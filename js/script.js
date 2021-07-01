@@ -91,7 +91,7 @@ function moveVenom() {
 function countDown() {
     //count down timer
     currentTime--
-    
+
     //display the current time 
     timeLeft.textContent = currentTime;
     //console.log('Hello')
@@ -99,6 +99,7 @@ function countDown() {
     if (currentTime == 0) {
         //console.log('current time')
         clearInterval(countDownTimerId);
+        
         //clear timerId
         clearInterval(timerId)
         alert('GAME OVER! your final Scores is: ' +result);
@@ -109,6 +110,12 @@ function countDown() {
 // start game button function 
 function startGame() {
     //console.log("Hello")
+
+    clearInterval(countDownTimerId);
+
+    clearInterval(timerId);
+    
+    currentTime = 30;
 
     //initializing score to zero
     score.textContent = 0;
